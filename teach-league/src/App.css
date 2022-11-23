@@ -1,38 +1,350 @@
 .App {
   text-align: center;
+  font-family: comfortaa;
+  /* max-width: 50%; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  text-align: left;
+  /* font-family: 'Helvetica'; */
+  font-family: comfortaa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#teacherLeagueLogo {
+  width: 25rem;
+  height: 4.75rem;
+  margin-top: -.5rem;
+  position: absolute;
+  left: 0rem;
+  border: 5px solid #6699CC;
+  opacity: .75;
+}
+
+#banner {
+  height: 4.6rem;
+  /* max-width: 75rem; */
+  width: 100%;
+  /* background: radial-gradient(circle,
+  yellow	 50%,
+  white   80%,
+  red 33%); */
+  z-index: 25;
+  opacity: 70%;
+  background-image: url(https://c8.alamy.com/comp/PWA4DJ/seamless-square-grid-graph-paper-pattern-in-blue-PWA4DJ.jpg);
+  border: 5px solid #6699CC;
+  background-size: 30rem;
+}
+
+/* #lounge-subtitle {
+  color: rgb(208, 44, 156);
+  padding-left: 2.5rem;
+  font-family: comfortaa;
+} */
+.lounge-subtitle {
+  background-color: offwhite;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px #ccc;
+  margin: 12px 5rem;
+  display: inline-block;
+  width: flex;
+  height:max-content;
+  padding: 2rem;
+}
+
+.lessonplan-card-item, .lounge-card-item {
+  background-color: offwhite;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px #ccc;
+  margin: 20px 5rem;
+  display: inline-block;
+  width: 18rem;
+  margin-top: 2rem;
+  height:max-content;
+}
+
+/* .lounge-card-item :nth-child(3) {
+  border: 2px solid orange;
+} */
+
+/* #snark {
+color: #6699CC;
+width: max-content;
+margin-top: 140%;
+} */
+
+#snarkImg {
+  position: relative;
+  top:-5rem;
+  right: 2.15rem;
+  /* z-index: 300rem; */
+
+  /* background-size:10%;
+  width: 160px;
+  height: 160px;
+  border: 2px solid;
+  resize: both;
+  overflow: scroll; */
+
+}
+
+ #snarkImg:active {
+ /* width: max-content; */
+  /* width: 25rem; */
+  /* height: auto; */
+  /* margin-top: -.5rem;  */
+  /* position:absolute;  */
+  /* left: center;  */
+  /* border: 5px solid #6699CC;
+  top: 2%; 
+  bottom: -5rem;  */
+  /* left: inline;  */
+  /* display: block;  */
+ /* display: inline-block;  */
+      /* right: 0rem; */
+
+
+
+  position: relative;
+  top: -.20rem;
+  height: 100rem;
+  width: auto;
+  z-index: 100rem;
+}
+
+  .Homer {
+height: fit-content;
   }
+
+.hotTake {
+height: 8rem;
+width: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .lounge-card-item :matches(#snark) {
+  border: 2px solid rgb(19, 132, 188);
+  color: #000000;
+
+} */
+
+.lounge-card-title {
+  color: white;
+  background-color: rgb(125, 14, 119);
+  font-size: 1.25rem;
+  font-family: Avenir-Heavy;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 12px 0px 0px 0px;
+  height: 3rem;
+}
+
+.lounge-card-content-theme {
+  text-align: left;
+}
+
+#Footer {
+  text-indent: 7em;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  opacity: .85;
+  max-width: 100%;
+  background:
+  radial-gradient(ellipse at top, #6699CC, transparent),
+  radial-gradient(ellipse at bottom, #6699CC, transparent);
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-right: -11rem;
+  text-align: center;
+  font-size: larger;
+  color: white;
+  -webkit-text-stroke: .1px gold;
+
+ }
+
+ .card-body, .lounge-card-content {
+  padding: .75rem;
+}
+
+.lessonplan-card-image, .lounge-card-image {
+  width: fit-content;
+  max-height: 12rem;
+  max-width: 12rem;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btnStyle {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.btn:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.btn:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.btn:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.lounge-card-subtitle {
+  text-align: center;
+  background-color: green;
+  color: blue;
+}
+
+.card-body {
+  /* width:18rem; */
+  outline: true;
+}
+
+.dialog {
+  box-shadow: 0 8px 6px -6px black;
+  position: static;
+  left: 20%;
+  top: 10%;
+}
+
+.image {
+  width: 300px;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events:none;
+}
+
+.modal.show {
+opacity: 1;
+pointer-events: visible;
+}
+
+.modal-content {
+  width: 500px;
+  background-color: #fff;
+  transform: translateY(-200px);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
+.modal-header, .modal-footer {
+  padding: 10px;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.modal-body {
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.modal.enter-done {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal.exit {
+  opacity: 0;
+}
+
+.modal.enter-done .modal-content {
+  transform: translateY(-200px);
+}
+
+.modal.exit .modal-content {
+  transform: translateY(-200px);
+}
+
+.card-img-overlay .card-title {
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.card-body > .card-title {
+  font-family: 'Lobster', cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+h1,
+h2,
+h3,
+.card-body > .card-title {
+  font-family: 'Lobster', cursive;
+}
+
+/* .featuredLesson {
+  position: relative;
+  height: 2rem;
+  width: auto;
+
+} */
+
+.LessonPlanDetail {
+  min-height: 8vmax;
 }
